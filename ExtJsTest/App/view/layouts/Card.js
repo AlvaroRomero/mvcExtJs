@@ -71,7 +71,7 @@
 		},
 		{
 			id: 'card-2',
-			html: '<h1>Felicitaciones!</h1><p>Step 3 of 3 - Se agrega mas texto</p>'
+			html: '<h1>Felicitaciones!</h1><p>Step 3 of 3 - NUevo texto</p>'
 		}
 	],
 
