@@ -8,7 +8,8 @@
 		'DragDropController',
 		'FormController',
 		'GrillasController',
-		'AppController'
+		'AppController',
+		'ExcelController'
 	],
 
 	launch: function () {
