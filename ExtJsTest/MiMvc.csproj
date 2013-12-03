@@ -225,6 +225,7 @@
   <ItemGroup>
     <Content Include="App\app.js" />
     <Content Include="App\controller\DragDropController.js" />
+    <Content Include="App\controller\ExcelController.js" />
     <Content Include="App\controller\FormController.js" />
     <Content Include="App\controller\GrillasController.js" />
     <Content Include="App\controller\AppController.js" />
@@ -262,6 +263,7 @@
     <Content Include="App\view\layouts\grids\EditarDatos.js" />
     <Content Include="App\view\layouts\grids\Datos.js" />
     <Content Include="App\view\layouts\Column.js" />
+    <Content Include="App\view\layouts\InOutExcel.js" />
     <Content Include="bin\Antlr3.Runtime.dll" />
     <Content Include="bin\de\Microsoft.Data.Edm.resources.dll" />
     <Content Include="bin\de\Microsoft.Data.OData.resources.dll" />

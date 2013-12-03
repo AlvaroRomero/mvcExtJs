@@ -2,7 +2,7 @@
 	extend: 'Ext.tab.Panel',
 	alias: 'widget.home',//identificador de la vista
 	
-	activeTab: 4,
+	activeTab: 3,
 	items: [
 		{
 			xtype: 'column'

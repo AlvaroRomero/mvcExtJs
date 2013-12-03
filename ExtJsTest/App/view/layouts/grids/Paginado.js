@@ -58,10 +58,10 @@
 	initComponent: function () {
 		
 		var miStore = new Ext.data.Store({
-			//autoLoad: false,
-			remoteSort: true,
+			autoLoad: false,
+			//remoteSort: true,
 			fields: ['nombre', 'apellido', 'fecha'],
-			pageSize: 10,
+			pageSize: 5,
 			proxy: {
 				type: 'ajax',
 				api: {
@@ -81,19 +81,22 @@
 			}]*/
 			//autoLoad: { start: 0, limit: 5 },
 		});
-		
-		/*miStore.load({
+
+		miStore.load();
+		/*
+		miStore.load({
 			params: {
 				start: 0,
-				limit: 5,
-				foo: 'bar'
+				limit: 5
+				//foo: 'bar'
 			}
-		});*/
-		
-		miStore.loadPage(1);
+			//callback: function() {console.log(arguments);}
+		});
+		*/
+	//	miStore.loadPage(1);
 		
 		Ext.apply(this, {
-			//frame:true,
+			frame:true,
 			store: miStore,
 
 			columns: [
@@ -110,15 +113,26 @@
 				{
 					header: 'Fecha',
 					dataIndex: 'fecha',
-					flex: 0.5
+					flex: 0.6
 				}
 			],
+			height: 300,
+			dockedItems: [{
+				xtype: 'pagingtoolbar',
+				store: miStore,
+				dock: 'bottom',
+				displayInfo:true
+			}]
+
+			/*
 			bbar: Ext.create('Ext.PagingToolbar', {
 				store: miStore,
 				displayInfo: true,
 				displayMsg: 'Datos {0} - {1} de {2}',
 				emptyMsg: "No hay datos"
 			})
+			*/
+
 
 			/*bbar: {
 				items: [
