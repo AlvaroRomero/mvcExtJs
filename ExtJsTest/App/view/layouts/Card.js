@@ -55,7 +55,8 @@
 			dockedItems: [
 				{
 					xtype: 'ejercicios',
-					dock: 'bottom'
+					dock: 'bottom',
+					border: 1
 				}
 			]
 
