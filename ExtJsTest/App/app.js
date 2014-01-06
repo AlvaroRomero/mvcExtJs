@@ -9,7 +9,7 @@
 		'FormController',
 		'GrillasController',
 		'AppController',
-		'ExcelController'
+		'ThemesController'
 	],
 
 	launch: function () {

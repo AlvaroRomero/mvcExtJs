@@ -17,7 +17,7 @@
 			xtype: 'acordeon'
 		},
 		{
-			xtype: 'inOutExcel'
+			//xtype: 'themes'
 		}
 	]
 });
