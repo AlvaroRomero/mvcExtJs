@@ -1,6 +1,8 @@
 Ext.define('MiMvc5.view.layouts.Themes', {
 	extend: 'Ext.panel.Panel',
 	alias: 'widget.themes',
+	title: 'Exts Components',
+	itemId: 'tabThemes',
 	
 	require: [
 		'Ext.window.Window',
@@ -20,7 +22,9 @@ Ext.define('MiMvc5.view.layouts.Themes', {
 		'Ext.perf.Monitor'
 	],
 
+	
 	hasOption: function (name) {
+		console.log(name);
 		return window.location.search.indexOf(name) >= 0;
 	},
 	
@@ -51,9 +55,9 @@ Ext.define('MiMvc5.view.layouts.Themes', {
 	setInicial: function() {return useDeferRender=true;},
 	setInicial2: function() {
 		rtl = this.hasOption('rtl');
+		console.log(rtl);
 		return rtl;
 	},
-	
 	
 	/*
 	if (hasOption('diag')) {
@@ -79,7 +83,7 @@ Ext.define('MiMvc5.view.layouts.Themes', {
 
 		width : 150,
 		height: 90,
-		rtl: this.setInicial2(),
+		//rtl: this.setInicial2(),
 
 		title: 'Basic Panel',
 		animCollapse: true,
@@ -96,7 +100,7 @@ Ext.define('MiMvc5.view.layouts.Themes', {
 
 		width : 150,
 		height: 70,
-		rtl: rtl,
+		//rtl: rtl,
 
 		title: 'Collapsed Panel',
 		animCollapse: true,
@@ -134,7 +138,7 @@ Ext.define('MiMvc5.view.layouts.Themes', {
 
 		width : 170,
 		height: 100,
-		rtl: rtl,
+		//rtl: rtl,
 
 		title: 'Framed Panel',
 		animCollapse: true,
@@ -172,7 +176,7 @@ Ext.define('MiMvc5.view.layouts.Themes', {
 
 		width : 170,
 		height: 60,
-		rtl: rtl,
+		//rtl: rtl,
 
 		title: 'Collapsed Framed Panel',
 		animCollapse: true,
@@ -217,7 +221,7 @@ Ext.define('MiMvc5.view.layouts.Themes', {
 
 		width : 450,
 		height: 170,
-		rtl: rtl,
+		//rtl: rtl,
 
 		title: 'Basic Panel With Toolbars',
 		collapsible: true,
@@ -343,7 +347,7 @@ Ext.define('MiMvc5.view.layouts.Themes', {
 
 		width : 450,
 		height: 170,
-		rtl: rtl,
+		//rtl: rtl,
 		frame: false,
 		collapsible: true,
 		bodyPadding: 10,
@@ -475,7 +479,7 @@ Ext.define('MiMvc5.view.layouts.Themes', {
 
 		width : 450,
 		height: 300,
-		rtl: rtl,
+		//rtl: rtl,
 		frame: false,
 		collapsible: true,
 		bodyPadding: 10,
@@ -510,7 +514,7 @@ Ext.define('MiMvc5.view.layouts.Themes', {
 
 		width : 630,
 		height: 960,
-		rtl: rtl,
+		//rtl: rtl,
 
 		frame: true,
 		collapsible: true,
@@ -686,7 +690,7 @@ Ext.define('MiMvc5.view.layouts.Themes', {
 
 		width : 450,
 		height: 350,
-		rtl: rtl,
+		//rtl: rtl,
 
 		x: 660, y: 200,
 
@@ -788,7 +792,7 @@ Ext.define('MiMvc5.view.layouts.Themes', {
 
 		height: 200,
 		width : 450,
-		rtl: rtl,
+		//rtl: rtl,
 
 		x: 660, y: 560,
 
@@ -859,7 +863,7 @@ Ext.define('MiMvc5.view.layouts.Themes', {
 
 		width : 450,
 		height: 240,
-		rtl: rtl,
+		//rtl: rtl,
 
 		bodyStyle: {
 			'background-color': '#eee'
@@ -883,7 +887,7 @@ Ext.define('MiMvc5.view.layouts.Themes', {
 
 		width : 310,
 		height: 150,
-		rtl: rtl,
+		//rtl: rtl,
 
 		activeTab: 0,
 
@@ -964,7 +968,7 @@ Ext.define('MiMvc5.view.layouts.Themes', {
 		x: 20, y: 1330,
 
 		width : 180,
-		rtl: rtl,
+		//rtl: rtl,
 		border: false,
 		items: {
 			xtype: 'datepicker'
@@ -994,7 +998,7 @@ Ext.define('MiMvc5.view.layouts.Themes', {
 
 		width: 450,
 		height: 200,
-		rtl: rtl,
+		//rtl: rtl,
 
 		bodyPadding: 5,
 		layout: {
@@ -1026,7 +1030,7 @@ Ext.define('MiMvc5.view.layouts.Themes', {
 		width: 450,
 		height:182,
 		x: 660, y: 1230,
-		rtl: rtl,
+		//rtl: rtl,
 		xtype: 'grid',
 		title: 'Framed Grid',
 		collapsible: true,
@@ -1054,7 +1058,7 @@ Ext.define('MiMvc5.view.layouts.Themes', {
 		minWidth: 150,
 		minHeight: 150,
 		maxHeight: 170,
-		rtl: rtl,
+		//rtl: rtl,
 
 		title: 'Window',
 		cls: 'x-window-tool-fix',
@@ -1108,7 +1112,7 @@ Ext.define('MiMvc5.view.layouts.Themes', {
 		width   : 450,
 		// height  : 360,
 		minWidth: 450,
-		rtl: rtl,
+		//rtl: rtl,
 
 		title: 'Window',
 
@@ -1201,10 +1205,11 @@ Ext.define('MiMvc5.view.layouts.Themes', {
 
 	doThemes: function (rtl) {
 		
+	/*	
 	var time = Ext.perf.getTimestamp(),
 		maskedPanel,
 		mainContainer;
-
+*/
 	if (this.hasOption('nocss3')) {
 		Ext.supports.CSS3BorderRadius = false;
 		Ext.getBody().addCls('x-nbr x-nlg');
@@ -1236,12 +1241,12 @@ Ext.define('MiMvc5.view.layouts.Themes', {
 	mainContainer = Ext.create('Ext.container.Container', {
 		id: 'main-container',
 		renderTo: document.body,
-		height: 1460,
-		width: 1130,
+		/*height: 1460,
+		width: 1130,*/
 		layout: 'absolute',
 		items: items
 	});
-
+	
 	this.addResizer(mainContainer.el);
 	//addFormWindow();
 
@@ -1278,8 +1283,8 @@ Ext.define('MiMvc5.view.layouts.Themes', {
 		}
 	}, 2000);
 
-	time = Ext.perf.getTimestamp() - time;
-	Ext.log('total time: ' + Math.round(time));
+	/*time = Ext.perf.getTimestamp() - time;
+	Ext.log('total time: ' + Math.round(time));*/
 },
 
 initComponent: function() {
@@ -1289,6 +1294,10 @@ initComponent: function() {
 		data: this.generateData()
 	});
 	
+	useDeferRender = !this.hasOption('nodefer');
+	this.doThemes();
+	
+	/*
 	if (!this.hasOption('perf')) {
 		useDeferRender = !this.hasOption('nodefer');
 		if (this.hasOption('delay')) {
@@ -1314,7 +1323,8 @@ initComponent: function() {
 			Ext.Perf.report();
 		}, 1000);
 	}
-	
+	*/
+
 	this.callParent(arguments);
 	}
 
