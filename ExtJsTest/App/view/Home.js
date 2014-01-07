@@ -2,7 +2,7 @@
 	extend: 'Ext.tab.Panel',
 	alias: 'widget.home',//identificador de la vista
 	
-	activeTab: 0,
+	activeTab: 4,
 	items: [
 		{
 			xtype: 'column'
@@ -15,6 +15,10 @@
 		},
 		{
 			xtype: 'acordeon'
+		},
+		{
+			title:'Componentes de ExtsJS'
+			//xtype: 'themes'
 		}
 	]
 });

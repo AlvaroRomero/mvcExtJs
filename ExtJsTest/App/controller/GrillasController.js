@@ -123,7 +123,6 @@
 	},
 	
 	saveCeldas: function () {
-		debugger;
 
 		var grid = this.getCeldasListGrid(),
 		store = grid.store;

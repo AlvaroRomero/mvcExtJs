@@ -55,7 +55,8 @@
 			dockedItems: [
 				{
 					xtype: 'ejercicios',
-					dock: 'bottom'
+					dock: 'bottom',
+					border: 1
 				}
 			]
 
@@ -71,7 +72,7 @@
 		},
 		{
 			id: 'card-2',
-			html: '<h1>Felicitaciones!</h1><p>Step 3 of 3 - NUevo texto</p>'
+			html: '<h1>Felicitaciones!</h1><p>Paso 3 of 3 - ahora si cambia el master</p>'
 		}
 	],
 

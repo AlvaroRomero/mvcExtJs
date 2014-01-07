@@ -19,7 +19,7 @@
 			xtype: 'grillas',
 		},
 		{
-			title: 'Panel 3',
+			title: 'Importar Excel',
 			html: 'Panel content!'
 		}
 	]
