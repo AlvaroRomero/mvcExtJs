@@ -16,7 +16,7 @@
 		
 		Ext.create('Ext.container.Viewport', {
 			layout: 'fit',
-			items: { xtype: 'themes' }
+			items: { xtype: 'home' }
 			
 		});
 	}
