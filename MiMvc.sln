@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiMvc", "ExtJsTest\MiMvc.csproj", "{7E177BE3-AE2C-46DD-BCEF-114E51106FC6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiMvc", "Source\MiMvc.csproj", "{7E177BE3-AE2C-46DD-BCEF-114E51106FC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
