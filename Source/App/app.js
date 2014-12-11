@@ -9,7 +9,8 @@
 		'FormController',
 		'GrillasController',
 		'AppController',
-		'ThemesController'
+		'ThemesController',
+		'ProgrammingController'
 	],
 
 	launch: function () {

@@ -16,7 +16,7 @@
 	border: true,
 	title:'Proxy :Memory/Array',
 	store: new Ext.data.Store({
-		storeId: 'simpsons',
+		//storeId: 'simpsons',
 		fields: ['nombre'],//array de objetos
 		autoLoad: true,
 		data: [['Moe'], ['Barnie'], ['Smithers'], ['Burns'], ['Skinner']],

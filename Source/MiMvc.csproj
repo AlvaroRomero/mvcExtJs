@@ -225,12 +225,14 @@
   <ItemGroup>
     <Content Include="App\app.js" />
     <Content Include="App\controller\DragDropController.js" />
+    <Content Include="App\controller\ProgrammingController.js" />
     <Content Include="App\controller\ThemesController.js" />
     <Content Include="App\controller\FormController.js" />
     <Content Include="App\controller\GrillasController.js" />
     <Content Include="App\controller\AppController.js" />
     <Content Include="App\model\User.js" />
     <Content Include="App\model\Simple.js" />
+    <Content Include="App\view\programming\Calculadora.js" />
     <Content Include="App\view\layouts\Themes2.js" />
     <Content Include="App\view\layouts\forms\Contacto.js" />
     <Content Include="App\view\layouts\forms\TipoCampos.js" />
